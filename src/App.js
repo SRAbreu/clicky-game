@@ -32,7 +32,7 @@ class App extends Component {
         return;
       }
 
-      this.setState({clickedPuppyIds, score:this.state.score+1}, function(){console.log("state updated; " + this.state.score)});
+      this.setState({pups, clickedPuppyIds, score: clickedPuppyIds.length}, function(){console.log("state updated; " + this.state.score)});
       this.shuffleData(pups); 
     }
   }
